@@ -8,37 +8,24 @@ const Home = () => (
       <title>Home</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
-
     <Nav />
-
-    <div className="hero">
-      <h1 className="title">Welcome to Spectre!</h1>
-      <p className="description">
-        The best site for recommendations on anime, cartoons and manga.
-      </p>
+    <div className="full-width text-tint-01">
+      <div
+        className="h-full w-full absolute top-0 bg-cover bg-cyan"
+        style={{
+          backgroundImage: "url(https://i.imgur.com/ugzscGo.png)",
+          backgroundBlendMode: "multiply"
+        }}
+      />
+      <div className="content relative text-center">
+        <h1 className="m-0 text-white w-full mt-32 text-5xl leading-tight">
+          Welcome to Spectre!
+        </h1>
+        <p className="text-cyan-dark pt-2">
+          The best site for recommendations on anime, cartoons and manga.
+        </p>
+      </div>
     </div>
-
-    <style jsx>{`
-      .hero {
-        width: 100%;
-        color: #333;
-      }
-      .title {
-        margin: 0;
-        color: #fff;
-        width: 100%;
-        padding-top: 80px;
-        line-height: 1.15;
-        font-size: 48px;
-      }
-      .description {
-        color: darkcyan;
-      }
-      .title,
-      .description {
-        text-align: center;
-      }
-    `}</style>
   </div>
 );
 

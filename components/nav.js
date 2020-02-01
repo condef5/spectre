@@ -2,52 +2,24 @@ import React from "react";
 import Link from "next/link";
 
 const Nav = () => (
-  <nav>
-    <ul>
-      <li>
+  <nav className="text-center relative z-10">
+    <ul className="flex justify-between px-4 py-1">
+      <li className="flex px-2 py-1">
         <Link href="/">
-          <a>Home</a>
+          <a className="text-cyan-dark font-medium text-sm tracking-wider hover:text-cyan">
+            Home
+          </a>
         </Link>
       </li>
       <li>
-        <Link href="https://github.com/condef5/spectre">
-          <a>Github</a>
-        </Link>
+        <a
+          className="text-cyan-dark font-medium text-sm tracking-wider  hover:text-cyan"
+          href="https://github.com/condef5/spectre"
+        >
+          Github
+        </a>
       </li>
     </ul>
-
-    <style jsx>{`
-      :global(body) {
-        margin: 0;
-        background: #000;
-        font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-          Helvetica, sans-serif;
-      }
-      nav {
-        text-align: center;
-      }
-      ul {
-        display: flex;
-        justify-content: space-between;
-      }
-      nav > ul {
-        padding: 4px 16px;
-      }
-      li {
-        display: flex;
-        padding: 6px 8px;
-      }
-      a {
-        color: darkcyan;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 13px;
-        letter-spacing: 0.5px;
-      }
-      a:hover {
-        color: cyan;
-      }
-    `}</style>
   </nav>
 );
 
